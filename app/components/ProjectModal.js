@@ -25,7 +25,7 @@ export default function ProjectModal({project, isVisible, setVisible}){
                 </div>
                 <div className="flex flex-wrap justify-center gap-2 mb-8">
                     {project.tags.map(tag => (
-                        <span className="px-3 py-1 bg-blue-700 rounded-full text-white font-medium text-xs md:text-sm">{tag}</span>
+                        <span className="px-3 py-1 bg-blue-700 rounded-full text-white font-medium text-xs md:text-sm" key={tag}>{tag}</span>
                     ))}
                 </div>
                 <div className="w-full justify-center flex flex-col md:flex-row items-center gap-4">

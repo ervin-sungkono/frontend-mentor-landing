@@ -44,8 +44,8 @@ export default function ImageSlider({images}){
     };
     return(
         <Slider {...settings}>
-            {images.map(image => (
-                <div className="relative w-full aspect-video overflow-hidden rounded-md">
+            {images.map((image, index) => (
+                <div className="relative w-full aspect-video overflow-hidden rounded-md" key={index}>
                     <Image src={image} alt="" fill className="object-cover"/>
                 </div>
             ))}

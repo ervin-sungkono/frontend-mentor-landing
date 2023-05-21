@@ -28,9 +28,9 @@ export default async function UserBanner(){
                     </p>
                 </div>
                 <div className="flex gap-3">
-                    {socialLinks.map((social => (
-                        <Link href={social.url} target="_blank">{social.icon}</Link>
-                    )))}
+                    {socialLinks.map((social, index) => (
+                        <Link href={social.url} target="_blank" key={index}>{social.icon}</Link>
+                    ))}
                 </div>
             </div>
         </section>
