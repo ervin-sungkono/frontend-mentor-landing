@@ -29,7 +29,7 @@ export default async function UserBanner(){
                 </div>
                 <div className="flex gap-3">
                     {socialLinks.map((social, index) => (
-                        <Link href={social.url} target="_blank" key={index}>{social.icon}</Link>
+                        <Link href={social.url} target="_blank" key={index} className="hover:text-blue-700 transition-colors duration-300">{social.icon}</Link>
                     ))}
                 </div>
             </div>

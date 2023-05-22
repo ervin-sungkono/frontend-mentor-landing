@@ -12,7 +12,7 @@ export default function ProjectCard({ project }){
         <>
             <ProjectModal project={project} isVisible={modalVisibility} setVisible={setModalVisibility}/>
             <div className="cursor-pointer w-full max-w-2xl flex flex-col xs:flex-row shadow-lg shadow-blue-50 rounded-lg border-[1px] border-black border-opacity-[0.15] hover:border-blue-700 overflow-hidden transition-colors duration-300" onClick={() => setModalVisibility(true)}>
-                <div className="relative xs:max-w-[192px] w-full h-full aspect-video xs:aspect-auto">
+                <div className="relative xs:max-w-[224px] w-full h-full aspect-video xs:aspect-auto">
                     <Image src={project.images[0]} alt={project.title} fill className="object-cover"/>
                 </div>
                 <div className="w-full flex flex-col p-4">
