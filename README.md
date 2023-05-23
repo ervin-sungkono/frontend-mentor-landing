@@ -2,7 +2,7 @@
 Landing page for showcasing Frontend Mentor projects
 
 ## Built With
-- Next.js
+- Next.js (v13)
 - Tailwind CSS
 
 ## Screenshot
