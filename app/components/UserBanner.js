@@ -23,7 +23,7 @@ export default async function UserBanner(){
                     <p className="text-sm md:text-base text-black text-opacity-80">
                         Hello!, this is my personal website to showcase projects from&nbsp;
                         <span className="text-blue-700 font-semibold hover:underline">
-                            <Link href={"https://frontendmentor.io/"} target="_blank">Frontend Mentor</Link>
+                            <Link href={"https://frontendmentor.io/profile/ervin-sungkono"} target="_blank">Frontend Mentor</Link>
                         </span>
                     </p>
                 </div>

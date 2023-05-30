@@ -2,7 +2,6 @@
 import dynamic from "next/dynamic"
 import Link from "next/link"
 
-import { AiOutlineClose } from "@react-icons/all-files/ai/AiOutlineClose"
 import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub"
 import { AiOutlineLink } from "@react-icons/all-files/ai/AiOutlineLink"
 import { formatDate } from "../lib/date"
@@ -10,11 +9,9 @@ const ImageSlider = dynamic(() => import("./ImageSlider"))
 
 export default function ProjectModal({project, isVisible, setVisible}){
     return(
-        <div className={`w-full h-full p-6 flex justify-center items-center bg-black bg-opacity-60 fixed ${isVisible ? "top-0" : "-top-full"} left-0 z-50 transition-all duration-500`}>
+        <div className={`w-full h-full p-6 flex justify-center items-center fixed ${isVisible ? "top-0" : "-top-full"} left-0 z-50 transition-all duration-500`}>
+            <div className="absolute cursor-pointer w-full h-full bg-black bg-opacity-60 top-0 left-0" onClick={() => setVisible(false)}></div>
             <div className="relative flex flex-col items-center max-w-4xl w-full max-h-[512px] h-auto overflow-y-scroll px-4 py-6 md:px-6 md:py-8 bg-white rounded-lg border-[1px] border-black border-opacity-[0.15]">
-                <button className="absolute right-0 top-0 p-2 z-50" onClick={() => setVisible(false)}>
-                    <AiOutlineClose size={24}/>
-                </button>
                 <div className="w-full max-w-lg aspect-video mb-10">
                     <ImageSlider images={project.images}/>
                 </div>
